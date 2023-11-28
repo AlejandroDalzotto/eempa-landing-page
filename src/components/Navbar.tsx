@@ -5,9 +5,9 @@ export const Navbar = () => {
   const [isExpanded, setIsExpanded] = useState(false)
 
   return (
-    <header className="max-w-screen-sm flex justify-between lg:justify-around items-center bg-orange-400 py-3 px-6">
+    <header className="max-w-screen-sm flex justify-between lg:justify-around items-center py-3 px-6">
 
-      <h1 className="text-3xl font-bold">EEMPA</h1>
+      <h1 className="text-3xl font-extrabold">EEMPA</h1>
 
       <nav>
 
@@ -18,7 +18,7 @@ export const Navbar = () => {
           {">"}{">"}{">"}{">"}
         </button>
 
-        <ul className={`${isExpanded ? "right-0" : "-right-80"} fixed flex flex-col items-center justify-evenly top-0 w-72 h-screen bg-black/10 backdrop-blur-sm`}>
+        <ul className={`${isExpanded ? "right-0" : "-right-80"} fixed flex flex-col transition-all items-center justify-start py-16 px-5 gap-y-16 top-0 w-72 h-screen bg-black/10 backdrop-blur`}>
 
           <button
             onClick={() => setIsExpanded(false)}
@@ -28,13 +28,16 @@ export const Navbar = () => {
           </button>
 
           <li>
-            <a href="/">Inicio</a>
+            <a href="/">Item 1</a>
           </li>
           <li>
-            <a href="/about">Sobre la institución</a>
+            <a href="/">Item 2</a>
           </li>
           <li>
-            <a href="/inscription">Solicitar inscripción</a>
+            <a href="/">Item 3</a>
+          </li>
+          <li>
+            <a href="/">Item 4</a>
           </li>
         </ul>
 
