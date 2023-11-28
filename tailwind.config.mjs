@@ -4,7 +4,7 @@ export default {
 	theme: {
 		extend: {
 			fontFamily: {
-				manrope: ["Manrope", "sans-serif"]
+				'league-spartan': ['League Spartan Variable', "sans-serif"]
 			}
 		},
 	},
