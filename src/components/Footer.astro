@@ -1,43 +1,52 @@
 ---
 import FormFooter from "./FormFooter.astro";
-
 ---
 
-<footer class="w-full py-4 px-14 flex flex-col bg-neutral-800 gap-y-2">
-
-  <p class="text-neutral-50 text-xl mb-3"><strong>Información y contacto</strong></p>
-  <p class="flex items-center gap-x-3">
-    <i>
-      <svg class="w-5 h-5 md:h-auto md:w-20 fill-neutral-400">
-        <use xlink:href="sprites.svg#mail" />
-      </svg>
-    </i>
-    <a href="#" class="text-neutral-400 text-lg">mail@example.com</a>
-  </p>
-  <p class="flex items-center gap-x-3">
-    <i>
-      <svg class="w-5 h-5 md:h-auto md:w-20 fill-neutral-400">
-        <use xlink:href="sprites.svg#whatsapp" />
-      </svg>
-    </i>
-    <a href="#" class="text-neutral-400 text-lg">Whatsapp +54 9 12 34567890</a>
-  </p>
-  <p class="flex items-center gap-x-3">
-    <i>
-      <svg class="w-5 h-5 md:h-auto md:w-20 fill-neutral-400">
-        <use xlink:href="sprites.svg#phone" />
-      </svg>
-    </i>
-    <span class="text-neutral-400 text-lg">(1234)-5342-9876</span>
-  </p>
-  <p class="flex items-center gap-x-3">
-    <i>
-      <svg class="w-5 h-5 md:h-auto md:w-20 fill-neutral-400">
-        <use xlink:href="sprites.svg#location" />
-      </svg>
-    </i>
-    <span class="text-neutral-400 text-lg">Pellegrini 1013, Venado Tuerto, Provincia de Santa Fe</span>
-  </p>
-
-  <FormFooter />
+<footer class="w-full py-10 md:py-20 px-14 bg-neutral-700 gap-y-2">
+  <div class="container flex flex-col md:flex-row mx-auto justify-center md:gap-x-10 items-start">
+    <div class="flex flex-col gap-y-2">
+      <p class="text-neutral-50 text-xl mb-3">
+        <strong>Información y contacto</strong>
+      </p>
+      <p class="flex items-center gap-x-3">
+        <i>
+          <svg class="w-5 h-5 fill-neutral-400">
+            <use xlink:href="sprites.svg#mail"></use>
+          </svg>
+        </i>
+        <a href="#" class="text-neutral-400 text-lg">mail@example.com</a>
+      </p>
+      <p class="flex items-center gap-x-3">
+        <i>
+          <svg class="w-5 h-5 fill-neutral-400">
+            <use xlink:href="sprites.svg#whatsapp"></use>
+          </svg>
+        </i>
+        <a href="#" class="text-neutral-400 text-lg"
+          >Whatsapp +54 9 12 34567890</a
+        >
+      </p>
+      <p class="flex items-center gap-x-3">
+        <i>
+          <svg class="w-5 h-5 fill-neutral-400">
+            <use xlink:href="sprites.svg#phone"></use>
+          </svg>
+        </i>
+        <span class="text-neutral-400 text-lg">(1234)-5342-9876</span>
+      </p>
+      <p class="flex items-center gap-x-3">
+        <i>
+          <svg class="w-5 h-5 fill-neutral-400">
+            <use xlink:href="sprites.svg#location"></use>
+          </svg>
+        </i>
+        <span class="text-neutral-400 text-lg"
+          >Pellegrini 1013, Venado Tuerto, Provincia de Santa Fe</span
+        >
+      </p>
+    </div>
+    <section>
+      <FormFooter />
+    </section>
+  </div>
 </footer>
